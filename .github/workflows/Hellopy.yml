@@ -1,0 +1,13 @@
+name: HelloWorld-python
+
+'on': push
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        with:
+          python-version: 3.7 
+      - name: Run Hello, World! script
+        run: python -c "print('Hello, World!')"
